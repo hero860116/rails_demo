@@ -1,13 +1,17 @@
-<header class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
+<header class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
-            <%= link_to "sample app", '#', id: "logo" %> <nav>
-            <ul class="nav pull-right">
+
+            <nav class="navbar-header">
+                <%= link_to "sample app", '#', id: "logo",class:"navbar-brand" %>
+            </nav>
+
+            <nav class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
                 <li>
                     <%= link_to "Home", home_path %></li>
                  <li><%= link_to "Help", help_path %></li>
                 <li><%= link_to "Sign in", signup_path %></li>
-            </ul> </nav>
+            </ul>
+            </nav>
         </div>
-    </div>
 </header>
